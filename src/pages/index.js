@@ -1,3 +1,61 @@
 import React from "react"
+import Helmet from "../Components/helmet"
+import MainNav from "../Components/navbar"
+import Header from "../Components/header"
+import About from "../Components/about"
+import Contact from "../Components/contact"
+import Work from "../Components/work"
+import { Global, css } from "@emotion/core"
+import { ThemeProvider } from "emotion-theming"
+import { theme } from "../Styles/theme"
+import styled from "@emotion/styled"
 
-export default () => <div>Hello world!</div>
+const Wrapper = styled.div`
+  width: 90%;
+  max-width: ${props => props.theme.sizes.myWorkW};
+  margin: auto;
+`
+
+export default () => (
+  <ThemeProvider theme={theme}>
+    <Global
+      styles={css`
+        @import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Montserrat:wght@500&display=swap");
+        * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+        }
+        html {
+          scroll-behavior: smooth;
+        }
+        body {
+          overflow-x: hidden;
+          font-family: "Montserrat", sans-serif;
+        }
+        p {
+          font-weight: 400;
+        }
+        h1,
+        h2,
+        h3 {
+          font-family: "Libre Baskerville", serif;
+        }
+        ul {
+          list-style: none;
+        }
+        a {
+          text-decoration: none;
+        }
+      `}
+    />
+    <Wrapper>
+      <Helmet />
+      <MainNav />
+      <Header />
+      <Work />
+      <About />
+      <Contact />
+    </Wrapper>
+  </ThemeProvider>
+)
