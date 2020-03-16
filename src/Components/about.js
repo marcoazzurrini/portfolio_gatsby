@@ -1,25 +1,16 @@
 import React from "react"
 import styled from "@emotion/styled"
+import { HeadingSecondary } from "../Styles/headers"
+import { SectionHero } from "../Styles/text"
 
 const About = styled.div`
-  max-width: ${props => props.theme.sizes.aboutW};
-  padding-top: ${props => props.theme.pm.pm500};
-`
+  max-width: ${props => props.theme.sizes.innerW};
+  padding-top: ${props => props.theme.pm.pm400};
 
-const HeadingSecondary = styled.h3`
-  font-size: ${props => props.theme.text.headingSecondary};
-  color: ${props => props.theme.colors.grey400};
-  margin-bottom: ${props => props.theme.pm.pm200};
-
-  span {
-    color: ${props => props.theme.colors.primary};
+  @media only screen and (max-width: ${props =>
+      props.theme.breakpoints.mobile}) {
+    padding-top: ${props => props.theme.pm.pm300};
   }
-`
-
-const SectionHero = styled.p`
-  font-size: ${props => props.theme.text.bodyLarge};
-  color: ${props => props.theme.colors.grey300};
-  margin-bottom: ${props => props.theme.pm.pm300};
 `
 
 const AboutText = styled.p`

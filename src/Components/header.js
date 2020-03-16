@@ -1,10 +1,12 @@
 import React from "react"
-import Chevron from "../img/chevron-down.png"
+import Chevron from "../img/chevronDown.png"
 import styled from "@emotion/styled"
-import Github from "../img/github.svg"
+import DeveloperSVG from "../img/coding.svg"
 import Document from "../img/document.svg"
-import Origami from "../img/origami.svg"
 import Curriculum from "../files/marco-azzurrini-curriculum.pdf"
+import { HeadingPrimary } from "../Styles/headers"
+import { SectionHero } from "../Styles/text"
+import { BtnMedium } from "../Styles/buttons"
 
 const Header = styled.div`
   height: 100vh;
@@ -12,37 +14,30 @@ const Header = styled.div`
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  position: relative;
+
+  @media only screen and (max-width: ${props =>
+      props.theme.breakpoints.mobile}) {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: ${props => props.theme.pm.pm200};
+  }
 `
 
 const HeaderCol = styled.div`
   margin-right: ${props => props.theme.pm.pm500};
-`
-
-const Title = styled.h1`
-  font-size: ${props => props.theme.text.headingPrimary};
-  font-weight: 200;
-  color: ${props => props.theme.colors.grey400};
-  margin-bottom: ${props => props.theme.pm.pm200};
-  span {
-    font-weight: 700;
-    color: ${props => props.theme.colors.primary};
-  }
-`
-
-const HeaderHero = styled.p`
-  color: ${props => props.theme.colors.grey200};
-  font-size: ${props => props.theme.text.bodyLarge};
-  span {
-    color: ${props => props.theme.colors.grey400};
+  @media only screen and (max-width: ${props =>
+      props.theme.breakpoints.mobile}) {
+    margin-right: 0;
+    margin-bottom: ${props => props.theme.pm.pm300};
   }
 `
 
 const ChevronDown = styled.a`
-  width: 30px;
+  width: ${props => props.theme.sizes.chevronW};
   position: absolute;
   bottom: 2rem;
-  left: calc(50% - 15px);
+  left: calc(50% - 12.5px);
   transition: all 0.25s ease-in-out;
   cursor: pointer;
   &:hover {
@@ -51,38 +46,20 @@ const ChevronDown = styled.a`
   img {
     width: 100%;
   }
+
+  @media only screen and (max-width: ${props =>
+      props.theme.breakpoints.mobile}) {
+    display: none;
+  }
 `
-
-const HeaderList = styled.ul``
-
-const HeaderListItem = styled.li`
-  margin-bottom: ${props => props.theme.pm.pm200};
-`
-
-const BtnLink = styled.a`
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  color: ${props => props.theme.colors.grey300};
-  font-size: ${props => props.theme.text.bodyMedium};
-
-  span {
-    display: inline-block;
-    cursor: pointer;
-    width: 45px;
-    height: 45px;
-    border-radius: 50%;
-    background: ${props =>
-      props.primary ? props.theme.colors.primary : props.theme.colors.white};
-    margin-right: ${props => props.theme.pm.pm200};
-    box-shadow: 1px 3px 4px rgba(0, 0, 0, 0.15);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    img {
-      width: 40%;
-    }
+const HeaderImg = styled.img`
+  width: 50%;
+  max-width: ${props => props.theme.sizes.headerImgW};
+  @media only screen and (max-width: ${props =>
+      props.theme.breakpoints.mobile}) {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
   }
 `
 
@@ -90,59 +67,31 @@ export default function header() {
   return (
     <Header id="header">
       <HeaderCol>
-        <Title>
+        <HeadingPrimary>
           Hello
           <span role="img" aria-label="peace sign">
             ✌🏼
           </span>
           , <br />
-          I'm <span className="header__title--name">Marco</span>{" "}
-        </Title>
-        <HeaderHero>
+          I'm <span>Marco</span>{" "}
+        </HeadingPrimary>
+        <SectionHero>
           A passionate
-          <span className="header__hero--role"> Frontend Developer</span>
-        </HeaderHero>
+          <span> Frontend Developer</span>
+        </SectionHero>
+        <BtnMedium
+          primary
+          href={Curriculum}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src={Document} alt="curriculum" />
+          Curriculum
+        </BtnMedium>
       </HeaderCol>
 
-      <HeaderList>
-        <HeaderListItem>
-          <BtnLink
-            primary
-            href={Curriculum}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <span>
-              <img src={Document} alt="curriculum" />
-            </span>
-            Curriculum
-          </BtnLink>
-        </HeaderListItem>
-        <HeaderListItem>
-          <BtnLink
-            href="https://www.linkedin.com/in/marco-azzurrini/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <span>
-              <img src={Origami} alt="cover letter" />
-            </span>
-            LinkedIn
-          </BtnLink>
-        </HeaderListItem>
-        <HeaderListItem>
-          <BtnLink
-            href="https://github.com/marcoazzurrini"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <span>
-              <img src={Github} alt="github" />
-            </span>
-            Github
-          </BtnLink>
-        </HeaderListItem>
-      </HeaderList>
+      <HeaderImg src={DeveloperSVG} alt="developer" />
+
       <ChevronDown href="#work">
         <img src={Chevron} alt="scroll down" />
       </ChevronDown>

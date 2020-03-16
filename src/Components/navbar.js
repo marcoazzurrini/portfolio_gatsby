@@ -9,13 +9,19 @@ const Navbar = styled.nav`
   left: 0;
   height: ${props => props.theme.sizes.navbarH};
   background: #fff;
+  box-shadow: ${props => props.theme.boxShadows.navbar};
   z-index: 5;
+
+  @media only screen and (max-width: ${props =>
+      props.theme.breakpoints.mobile}) {
+    display: none;
+  }
 `
 
 const NavbarContent = styled.div`
   width: 90%;
   margin: auto;
-  max-width: 1200px;
+  max-width: ${props => props.theme.sizes.layoutW};
   height: 100%;
   display: flex;
   justify-content: space-between;
@@ -24,7 +30,7 @@ const NavbarContent = styled.div`
 
 const Logo = styled.a`
   height: 100%;
-  max-height: 40px;
+  height: 60%;
   img {
     height: 100%;
   }
@@ -37,7 +43,7 @@ const NavbarMenu = styled.ul`
 `
 
 const NavbarMenuItem = styled.li`
-  margin-left: 1.5rem;
+  margin-left: ${props => props.theme.pm.pm200};
   cursor: pointer;
 `
 

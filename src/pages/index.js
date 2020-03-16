@@ -5,6 +5,7 @@ import Header from "../Components/header"
 import About from "../Components/about"
 import Contact from "../Components/contact"
 import Work from "../Components/work"
+import MobileNav from "../Components/mobileNav"
 import { Global, css } from "@emotion/core"
 import { ThemeProvider } from "emotion-theming"
 import { theme } from "../Styles/theme"
@@ -14,6 +15,14 @@ const Wrapper = styled.div`
   width: 90%;
   max-width: ${props => props.theme.sizes.myWorkW};
   margin: auto;
+
+  @media only screen and (max-width: ${props =>
+      props.theme.breakpoints.mobile}) {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
 `
 
 export default () => (
@@ -38,7 +47,8 @@ export default () => (
         }
         h1,
         h2,
-        h3 {
+        h3,
+        h4 {
           font-family: "Libre Baskerville", serif;
         }
         ul {
@@ -51,6 +61,7 @@ export default () => (
     />
     <Wrapper>
       <Helmet />
+      <MobileNav />
       <MainNav />
       <Header />
       <Work />
