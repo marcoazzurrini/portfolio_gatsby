@@ -25,5 +25,14 @@ module.exports = {
       },
     },
     `gatsby-plugin-offline`,
+    {
+      resolve: "gatsby-plugin-web-font-loader",
+      options: {
+        custom: {
+          families: ["Libre Baskerville, Montserrat"],
+          urls: ["/fonts/fonts.css"],
+        },
+      },
+    },
   ],
 }

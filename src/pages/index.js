@@ -9,21 +9,7 @@ import MobileNav from "../Components/mobileNav"
 import { Global, css } from "@emotion/core"
 import { ThemeProvider } from "emotion-theming"
 import { theme } from "../Styles/theme"
-import styled from "@emotion/styled"
-
-const Wrapper = styled.div`
-  width: 90%;
-  max-width: ${props => props.theme.sizes.myWorkW};
-  margin: auto;
-
-  @media only screen and (max-width: ${props =>
-      props.theme.breakpoints.mobile}) {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-  }
-`
+import { Wrapper } from "../Styles/wrapper"
 
 export default () => (
   <ThemeProvider theme={theme}>
@@ -37,9 +23,12 @@ export default () => (
         }
         html {
           scroll-behavior: smooth;
+          position: relative;
         }
         body {
           overflow-x: hidden;
+          position: relative;
+          width: 100vw;
           font-family: "Montserrat", sans-serif;
         }
         p {

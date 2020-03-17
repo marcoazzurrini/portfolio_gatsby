@@ -64,7 +64,7 @@ const ProjectItem = styled.li`
 
 const ProjectDescription = styled.p`
   width: 100%;
-  font-size: ${props => props.theme.text.bodyMedium};
+  font-size: ${props => props.theme.text.text200};
   line-height: 1.6;
   color: ${props => props.theme.colors.grey200};
   margin-bottom: ${props => props.theme.pm.pm200};
@@ -86,9 +86,10 @@ const ProjectCol = styled.div`
 `
 
 const ProjectStack = styled.p`
-  color: ${props => props.theme.colors.pm400};
-  font-size: ${props => props.theme.textBodyMedium};
+  color: ${props => props.theme.colors.grey400};
+  font-size: ${props => props.theme.text200};
   margin-bottom: ${props => props.theme.pm.pm100};
+  font-weight: 700;
 `
 const BtnLink = styled.a`
   transition: all 0.25s ease-in-out;

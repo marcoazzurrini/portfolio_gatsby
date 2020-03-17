@@ -32,7 +32,7 @@ export const theme = {
     text100: "14px",
   },
   breakpoints: {
-    mobile: "1200px",
+    mobile: "1080px",
   },
   boxShadows: {
     navbar: "0px 8px 10px rgba(0,0,0,.1)",

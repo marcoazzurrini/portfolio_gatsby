@@ -2,7 +2,7 @@ import styled from "@emotion/styled"
 
 export const HeadingPrimary = styled.h1`
   font-size: ${props => props.theme.text.text800};
-  font-weight: 200;
+  font-weight: 400;
   color: ${props => props.theme.colors.grey400};
   margin-bottom: ${props => props.theme.pm.pm200};
   span {

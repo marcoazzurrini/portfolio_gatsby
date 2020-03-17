@@ -14,7 +14,7 @@ const About = styled.div`
 `
 
 const AboutText = styled.p`
-  font-size: ${props => props.theme.text.bodyMedium};
+  font-size: ${props => props.theme.text.text200};
   color: ${props => props.theme.colors.grey200};
   margin-bottom: ${props => props.theme.pm.pm200};
   line-height: 1.8;

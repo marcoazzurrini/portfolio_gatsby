@@ -1,25 +1,9 @@
 import React from "react"
+import { css } from "@emotion/core"
 import styled from "@emotion/styled"
 import { Svg } from "./svg"
-
-const MobileNav = styled.nav`
-  display: none;
-  padding: 0 ${props => props.theme.pm.pm200};
-  width: 100vw;
-  background: #fff;
-  box-shadow: 0 -8px 10px rgba(0, 0, 0, 0.15);
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  height: 70px;
-
-  @media only screen and (max-width: ${props =>
-      props.theme.breakpoints.mobile}) {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-`
+import { theme } from "../Styles/theme"
+import Scrollspy from "react-scrollspy"
 
 const MobileNavLink = styled.a`
   width: 25px;
@@ -30,12 +14,35 @@ const MobileNavLink = styled.a`
 
 export default function mobileNav() {
   return (
-    <MobileNav>
+    <Scrollspy
+      items={["work", "about", "contact"]}
+      currentClassName="isCurrent"
+      css={css`
+        display: none;
+        z-index: 6;
+        padding: 0 ${theme.pm.pm200};
+        width: 100vw;
+        background: #fff;
+        box-shadow: 0 -8px 10px rgba(0, 0, 0, 0.15);
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        height: 70px;
+        & .isCurrent svg {
+          fill: ${theme.colors.primary};
+        }
+        @media only screen and (max-width: ${theme.breakpoints.mobile}) {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        }
+      `}
+    >
       <MobileNavLink href="#work">
         <Svg
           viewbox="0 0 20 20"
-          fill="#127EB1"
-          path="M8 20H3V10H0L10 0l10 10h-3v10h-5v-6H8v6z"
+          fill="#CACACA"
+          path="M9 12H1v6a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-6h-8v2H9v-2zm0-1H0V5c0-1.1.9-2 2-2h4V2a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v1h4a2 2 0 0 1 2 2v6h-9V9H9v2zm3-8V2H8v1h4z"
         />
       </MobileNavLink>
       <MobileNavLink href="#about">
@@ -52,6 +59,6 @@ export default function mobileNav() {
           path="M18 2a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4c0-1.1.9-2 2-2h16zm-4.37 9.1L20 16v-2l-5.12-3.9L20 6V4l-10 8L0 4v2l5.12 4.1L0 14v2l6.37-4.9L10 14l3.63-2.9z"
         />
       </MobileNavLink>
-    </MobileNav>
+    </Scrollspy>
   )
 }

@@ -14,7 +14,7 @@ const Header = styled.div`
   display: flex;
   justify-content: flex-start;
   align-items: center;
-
+  position: relative;
   @media only screen and (max-width: ${props =>
       props.theme.breakpoints.mobile}) {
     flex-direction: column;
@@ -25,11 +25,12 @@ const Header = styled.div`
 `
 
 const HeaderCol = styled.div`
-  margin-right: ${props => props.theme.pm.pm500};
+  width: 50%;
   @media only screen and (max-width: ${props =>
       props.theme.breakpoints.mobile}) {
     margin-right: 0;
     margin-bottom: ${props => props.theme.pm.pm300};
+    width: 100%;
   }
 `
 
@@ -55,6 +56,7 @@ const ChevronDown = styled.a`
 const HeaderImg = styled.img`
   width: 50%;
   max-width: ${props => props.theme.sizes.headerImgW};
+  margin-left: auto;
   @media only screen and (max-width: ${props =>
       props.theme.breakpoints.mobile}) {
     width: 80%;

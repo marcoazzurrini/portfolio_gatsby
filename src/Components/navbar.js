@@ -1,6 +1,7 @@
 import React from "react"
 import styled from "@emotion/styled"
 import LogoImg from "../img/logo.svg"
+import Scrollspy from "react-scrollspy"
 
 const Navbar = styled.nav`
   position: fixed;
@@ -36,22 +37,20 @@ const Logo = styled.a`
   }
 `
 
-const NavbarMenu = styled.ul`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-`
-
 const NavbarMenuItem = styled.li`
   margin-left: ${props => props.theme.pm.pm200};
   cursor: pointer;
+  &.isCurrent a {
+    font-weight: 700;
+  }
 `
 
 const NavbarMenuLink = styled.a`
+  transition: all 0.2s;
   color: ${props =>
     props.primary ? props.theme.colors.primary : props.theme.colors.grey200};
   margin-right: ${props => props.theme.pm.pm200};
-  font-size: ${props => props.theme.text.bodyMedium};
+  font-size: ${props => props.theme.text.text200};
 `
 
 export default function MainNav() {
@@ -61,7 +60,15 @@ export default function MainNav() {
         <Logo href="#header">
           <img src={LogoImg} alt="logo and scroll to top" />
         </Logo>
-        <NavbarMenu>
+        <Scrollspy
+          css={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+          items={["work", "about", "contact"]}
+          currentClassName="isCurrent"
+        >
           <NavbarMenuItem>
             <NavbarMenuLink href="#work" primary>
               My Work
@@ -73,7 +80,7 @@ export default function MainNav() {
           <NavbarMenuItem>
             <NavbarMenuLink href="#contact">Contacts</NavbarMenuLink>
           </NavbarMenuItem>
-        </NavbarMenu>
+        </Scrollspy>
       </NavbarContent>
     </Navbar>
   )

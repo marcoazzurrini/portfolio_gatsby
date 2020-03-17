@@ -23,7 +23,7 @@ const ContactLinks = styled.a`
 
   @media only screen and (max-width: ${props =>
       props.theme.breakpoints.mobile}) {
-    font-size: ${props => props.theme.text.text300};
+    font-size: ${props => props.theme.text.text200};
   }
 `
 
