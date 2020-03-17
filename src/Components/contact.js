@@ -55,6 +55,7 @@ export default function contact() {
           href="https://www.facebook.com/marcoazzurrini"
           target="_blank"
           rel="noreferrer"
+          alt="facebook"
         >
           <Svg
             viewbox="0 0 448 512"
@@ -66,6 +67,7 @@ export default function contact() {
           href="https://github.com/marcoazzurrini"
           target="_blank"
           rel="noreferrer"
+          alt="github"
         >
           <Svg
             viewbox="0 0 496 512"
@@ -77,6 +79,7 @@ export default function contact() {
           href="https://www.linkedin.com/in/marco-azzurrini/"
           target="_blank"
           rel="noreferrer"
+          alt="linkedin"
         >
           <Svg
             viewbox="0 0 512 512"
