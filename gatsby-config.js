@@ -5,8 +5,23 @@
  */
 
 module.exports = {
+  // Customize your site metadata:
   siteMetadata: {
-    siteUrl: "https://www.example.com",
+    title: "Marco Azzurrini developer",
+    author: "Marco Azzurrini",
+    description:
+      "Marco Azzurini, Frontend web developer specializing in React.js. With an emphansis on testing, performance and elegant design patterns Marco has built several web applications.",
+    siteUrl: "https://marcoazzurrini.com/",
+    social: [
+      {
+        name: "linkedin",
+        url: "https://linkedin.com/in/marcoazzurrini",
+      },
+      {
+        name: "github",
+        url: "https://github.com/marcoazzurrini",
+      },
+    ],
   },
   plugins: [
     `gatsby-plugin-emotion`,
