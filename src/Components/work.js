@@ -70,7 +70,7 @@ const ProjectDescription = styled.p`
   margin-bottom: ${props => props.theme.pm.pm200};
 `
 
-const ProjectLinks = styled.ul`
+const ProjectLinks = styled.div`
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -136,6 +136,7 @@ export default function work() {
               <BtnLink
                 href="https://github.com/marcoazzurrini"
                 target="_blank"
+                alt="github project"
                 rel="noopener noreferrer"
                 github
               ></BtnLink>
@@ -162,6 +163,7 @@ export default function work() {
               <BtnLink
                 href="https://github.com/marcoazzurrini"
                 target="_blank"
+                alt="github project"
                 rel="noopener noreferrer"
                 github
               ></BtnLink>
@@ -189,6 +191,7 @@ export default function work() {
                 href="https://github.com/marcoazzurrini"
                 target="_blank"
                 rel="noopener noreferrer"
+                alt="github project"
                 github
               ></BtnLink>
               <BtnLink primary></BtnLink>

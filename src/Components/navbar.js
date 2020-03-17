@@ -70,15 +70,19 @@ export default function MainNav() {
           currentClassName="isCurrent"
         >
           <NavbarMenuItem>
-            <NavbarMenuLink href="#work" primary>
+            <NavbarMenuLink href="#work" alt="work" primary>
               My Work
             </NavbarMenuLink>
           </NavbarMenuItem>
           <NavbarMenuItem>
-            <NavbarMenuLink href="#about">About</NavbarMenuLink>
+            <NavbarMenuLink href="#about" alt="about">
+              About
+            </NavbarMenuLink>
           </NavbarMenuItem>
           <NavbarMenuItem>
-            <NavbarMenuLink href="#contact">Contacts</NavbarMenuLink>
+            <NavbarMenuLink href="#contact" alt="contact">
+              Contacts
+            </NavbarMenuLink>
           </NavbarMenuItem>
         </Scrollspy>
       </NavbarContent>
