@@ -17,6 +17,7 @@ export default function mobileNav() {
     <Scrollspy
       items={["work", "about", "contact"]}
       currentClassName="isCurrent"
+      offset={-300}
       css={css`
         display: none;
         z-index: 6;
