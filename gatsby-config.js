@@ -24,6 +24,15 @@ module.exports = {
     ],
   },
   plugins: [
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `src`,
+        path: `${__dirname}/src/`,
+      },
+    },
     `gatsby-plugin-emotion`,
     `gatsby-plugin-react-helmet`,
     "gatsby-plugin-robots-txt",
@@ -48,6 +57,12 @@ module.exports = {
           families: ["Libre Baskerville, Montserrat"],
           urls: ["/fonts/fonts.css"],
         },
+      },
+    },
+    {
+      resolve: "gatsby-plugin-webpack-bundle-analyser-v2",
+      options: {
+        devMode: true,
       },
     },
   ],

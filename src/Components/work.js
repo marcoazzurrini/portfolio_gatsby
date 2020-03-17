@@ -1,10 +1,11 @@
 import React from "react"
-import Screenshot from "../img/portfolio.png"
 import styled from "@emotion/styled"
 import GithubSvg from "../img/github.svg"
 import LinkSvg from "../img/link.svg"
 import { HeadingSecondary, HeadingTertiary } from "../Styles/headers"
 import { SectionHero } from "../Styles/text"
+import { useStaticQuery, graphql } from "gatsby"
+import Img from "gatsby-image"
 
 const WorkSection = styled.div`
   width: 100%;
@@ -109,7 +110,21 @@ const BtnLink = styled.a`
   }
 `
 
-export default function work() {
+export default function Work() {
+  const data = useStaticQuery(graphql`
+    query {
+      file(relativePath: { eq: "img/portfolio.png" }) {
+        childImageSharp {
+          # Specify a fixed image and fragment.
+          # The default width is 400 pixels
+          fixed {
+            ...GatsbyImageSharpFixed_withWebp
+          }
+        }
+      }
+    }
+  `)
+
   return (
     <WorkSection id="work">
       <HeadingSecondary>
@@ -119,7 +134,10 @@ export default function work() {
 
       <ul>
         <ProjectItem>
-          <img src={Screenshot} alt="project one" />
+          <Img
+            fixed={data.file.childImageSharp.fixed}
+            alt="project screenshot"
+          />
           <ProjectCol>
             <HeadingTertiary>
               Personal <span>Portfolio</span>
@@ -146,7 +164,10 @@ export default function work() {
         </ProjectItem>
 
         <ProjectItem reverse>
-          <img src={Screenshot} alt="project one" />
+          <Img
+            fixed={data.file.childImageSharp.fixed}
+            alt="project screenshot"
+          />
           <ProjectCol>
             <HeadingTertiary>
               Personal <span>Portfolio</span>
@@ -173,7 +194,10 @@ export default function work() {
         </ProjectItem>
 
         <ProjectItem>
-          <img src={Screenshot} alt="project one" />
+          <Img
+            fixed={data.file.childImageSharp.fixed}
+            alt="project screenshot"
+          />
           <ProjectCol>
             <HeadingTertiary>
               Personal <span>Portfolio</span>
