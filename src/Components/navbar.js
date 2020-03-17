@@ -70,17 +70,17 @@ export default function MainNav() {
           currentClassName="isCurrent"
         >
           <NavbarMenuItem>
-            <NavbarMenuLink href="#work" alt="work" primary>
+            <NavbarMenuLink href="#work" aria-label="work" primary>
               My Work
             </NavbarMenuLink>
           </NavbarMenuItem>
           <NavbarMenuItem>
-            <NavbarMenuLink href="#about" alt="about">
+            <NavbarMenuLink href="#about" aria-label="about">
               About
             </NavbarMenuLink>
           </NavbarMenuItem>
           <NavbarMenuItem>
-            <NavbarMenuLink href="#contact" alt="contact">
+            <NavbarMenuLink href="#contact" aria-label="contact">
               Contacts
             </NavbarMenuLink>
           </NavbarMenuItem>

@@ -39,21 +39,21 @@ export default function mobileNav() {
         }
       `}
     >
-      <MobileNavLink alt="work section " href="#work">
+      <MobileNavLink aria-label="work section " href="#work">
         <Svg
           viewbox="0 0 20 20"
           fill="#CACACA"
           path="M9 12H1v6a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-6h-8v2H9v-2zm0-1H0V5c0-1.1.9-2 2-2h4V2a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v1h4a2 2 0 0 1 2 2v6h-9V9H9v2zm3-8V2H8v1h4z"
         />
       </MobileNavLink>
-      <MobileNavLink alt="about section" href="#about">
+      <MobileNavLink aria-label="about section" href="#about">
         <Svg
           viewbox="0 0 20 20"
           fill="#CACACA"
           path="M2.93 17.07A10 10 0 1 1 17.07 2.93 10 10 0 0 1 2.93 17.07zM9 11v4h2V9H9v2zm0-6v2h2V5H9z"
         />
       </MobileNavLink>
-      <MobileNavLink alt="contact" href="#contact">
+      <MobileNavLink aria-label="contact" href="#contact">
         <Svg
           viewbox="0 0 20 20"
           fill="#CACACA"

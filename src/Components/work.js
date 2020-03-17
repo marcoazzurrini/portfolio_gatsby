@@ -136,7 +136,7 @@ export default function work() {
               <BtnLink
                 href="https://github.com/marcoazzurrini"
                 target="_blank"
-                alt="github project"
+                aria-label="github project"
                 rel="noopener noreferrer"
                 github
               ></BtnLink>
@@ -163,7 +163,7 @@ export default function work() {
               <BtnLink
                 href="https://github.com/marcoazzurrini"
                 target="_blank"
-                alt="github project"
+                aria-label="github project"
                 rel="noopener noreferrer"
                 github
               ></BtnLink>
@@ -191,7 +191,7 @@ export default function work() {
                 href="https://github.com/marcoazzurrini"
                 target="_blank"
                 rel="noopener noreferrer"
-                alt="github project"
+                aria-label="github project"
                 github
               ></BtnLink>
               <BtnLink primary></BtnLink>

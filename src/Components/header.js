@@ -94,7 +94,7 @@ export default function header() {
 
       <HeaderImg src={DeveloperSVG} alt="developer" />
 
-      <ChevronDown alt="scroll down" href="#work">
+      <ChevronDown aria-label="scroll down" href="#work">
         <img src={Chevron} alt="scroll down" />
       </ChevronDown>
     </Header>
