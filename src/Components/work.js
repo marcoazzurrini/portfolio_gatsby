@@ -116,8 +116,8 @@ export default function Work(props) {
     query {
       imageOne: file(relativePath: { eq: "img/portfolio.png" }) {
         childImageSharp {
-          fluid(maxWidth: 500) {
-            ...GatsbyImageSharpFluid
+          fluid(maxWidth: 500, quality: 100) {
+            ...GatsbyImageSharpFluid_withWebp
           }
         }
       }
