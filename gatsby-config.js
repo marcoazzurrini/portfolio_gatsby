@@ -65,5 +65,12 @@ module.exports = {
         devMode: true,
       },
     },
+    `gatsby-plugin-csp`,
+    {
+      resolve: "gatsby-plugin-html-attributes",
+      options: {
+        lang: "en",
+      },
+    },
   ],
 }

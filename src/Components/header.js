@@ -8,7 +8,7 @@ import { HeadingPrimary } from "../Styles/headers"
 import { SectionHero } from "../Styles/text"
 import { BtnMedium } from "../Styles/buttons"
 
-const Header = styled.div`
+const Header = styled.header`
   height: 100vh;
   width: 100%;
   display: flex;
@@ -87,7 +87,7 @@ export default function header() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img src={Document} alt="curriculum" />
+          <img src={Document} alt="download" />
           Curriculum
         </BtnMedium>
       </HeaderCol>

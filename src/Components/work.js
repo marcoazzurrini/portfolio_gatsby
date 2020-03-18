@@ -8,7 +8,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 import { css } from "@emotion/core"
 import { theme } from "../Styles/theme"
-const WorkSection = styled.div`
+const WorkSection = styled.section`
   width: 100%;
   padding-top: ${props => props.theme.pm.pm400};
 

@@ -3,7 +3,7 @@ import styled from "@emotion/styled"
 import { HeadingSecondary } from "../Styles/headers"
 import { SectionHero } from "../Styles/text"
 
-const About = styled.div`
+const About = styled.section`
   max-width: ${props => props.theme.sizes.innerW};
   padding-top: ${props => props.theme.pm.pm400};
 

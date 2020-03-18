@@ -15,7 +15,7 @@ export const HeadingPrimary = styled.h1`
   }
 `
 
-export const HeadingSecondary = styled.h3`
+export const HeadingSecondary = styled.h2`
   font-size: ${props => props.theme.text.text700};
   color: ${props => props.theme.colors.grey400};
   margin-bottom: ${props => props.theme.pm.pm200};
