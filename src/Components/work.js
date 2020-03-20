@@ -144,11 +144,11 @@ export default function Work(props) {
             </HeadingTertiary>
             <ProjectStack>REACT - EMOTIONJS - GATSBY</ProjectStack>
             <ProjectDescription>
-              This very website you're now watching. I wanted something fast and
-              with good SEO for my portfolio, so vanilla JS with SCSS seemed
-              like the best fit. The visual effect on the top right of the
-              header is achieved via a light library called animate.js,
-              dynamically modifying a SVG file.
+              This very website you're now watching. I wanted something fast so
+              GatsbyJS, an open source framework based on React, seemed like the
+              best fit. Gatsby has a rich ecosystem of plugins, some of which I
+              am using to ensure great SEO. I am also using a library called
+              EmotionJS to manage the CSS.
             </ProjectDescription>
             <ProjectLinks>
               <BtnLink
