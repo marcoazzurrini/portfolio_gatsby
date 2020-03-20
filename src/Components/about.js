@@ -26,24 +26,50 @@ export default function about() {
       <HeadingSecondary>
         <span>About</span> Me
       </HeadingSecondary>
-      <SectionHero>Everything about me, myself and I.</SectionHero>
+      <SectionHero>Let me to give you some context...</SectionHero>
       <AboutText>
-        This very website you're now watching. I wanted something fast and with
-        good SEO for my portfolio, so vanilla JS with SCSS seemed like the best
-        fit. The visual effect on the top right of the header is achieved via a
-        light library called animate.js, dynamically modifying a SVG file.{" "}
+        After completing my IT diploma, I decided to relocate to London, UK,
+        where I stayed for almost 6 years. I worked a variety of jobs, spanning
+        from catering, construction to transporation.
       </AboutText>
       <AboutText>
-        This very website you're now watching. I wanted something fast and with
-        good SEO for my portfolio, so vanilla JS with SCSS seemed like the best
-        fit. The visual effect on the top right of the header is achieved via a
-        light library called animate.js, dynamically modifying a SVG file.{" "}
+        Looking back, those were very formative years, I learned many life
+        lessons, including the value of hard work and dedication. Working
+        blue-collar jobs allowed me to realyl form my personality and give me
+        the determination to later succeed as a developer.
       </AboutText>
       <AboutText>
-        This very website you're now watching. I wanted something fast and with
-        good SEO for my portfolio, so vanilla JS with SCSS seemed like the best
-        fit. The visual effect on the top right of the header is achieved via a
-        light library called animate.js, dynamically modifying a SVG file.{" "}
+        However after a few years I felt like I could do more.
+      </AboutText>
+      <AboutText>
+        In March 2018, after a minor car accident while I was working my courier
+        job, I decided it was time for a change, it was time to go back to my
+        original passion: programming!
+      </AboutText>
+      <AboutText>
+        I started waking up at 6am to study HTML, CSS and Javascript before
+        going to work. I quickly started loving Javascript, gradually I
+        dedicated more and more time to it and in January 2019 I decided to take
+        the risk and transition to full time developer.
+      </AboutText>
+      <AboutText>
+        During this time, I was awarded by Deliveroo a full scholarship to study
+        Front-end Web Development with OpenClassrooms, europe’s largest
+        online-only higher education institution. I also took a number of online
+        courses, covering all the topics then I need to assert myself in the job
+        market.
+      </AboutText>
+      <AboutText>
+        Most importantly every single course and lesson that I took, I applied
+        it. I built countless projects, some of theme you can see on this
+        website. I also solved more than 200 algorithmic challenges on websites
+        like codewars.com, hackerrank.com and hackajob.com. I fell in love with
+        coding and problem solving.
+      </AboutText>
+      <AboutText>
+        I can condfidently say it's one of the best things that has ever
+        happened to me. It has taught me to think critically and gave me
+        incredible opportunities.
       </AboutText>
     </About>
   )

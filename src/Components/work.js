@@ -152,13 +152,19 @@ export default function Work(props) {
             </ProjectDescription>
             <ProjectLinks>
               <BtnLink
-                href="https://github.com/marcoazzurrini"
+                href="https://github.com/marcoazzurrini/portfolio_gatsby"
                 target="_blank"
                 aria-label="github project"
                 rel="noopener noreferrer"
                 github
               ></BtnLink>
-              <BtnLink primary></BtnLink>
+              <BtnLink
+                href="https://marcoazzurrini.com"
+                target="_blank"
+                aria-label="github project"
+                rel="noopener noreferrer"
+                primary
+              ></BtnLink>
             </ProjectLinks>
           </ProjectCol>
         </ProjectItem>
@@ -171,15 +177,15 @@ export default function Work(props) {
           />
           <ProjectCol>
             <HeadingTertiary>
-              Personal <span>Portfolio</span>
+              Password <span>Manager</span>
             </HeadingTertiary>
-            <ProjectStack>REACT - EMOTIONJS - GATSBY</ProjectStack>
+            <ProjectStack>REACT - REDUX - FIREBASE</ProjectStack>
             <ProjectDescription>
-              This very website you're now watching. I wanted something fast and
-              with good SEO for my portfolio, so vanilla JS with SCSS seemed
-              like the best fit. The visual effect on the top right of the
-              header is achieved via a light library called animate.js,
-              dynamically modifying a SVG file.
+              I set out to build a password manager as an internal tool for a
+              previous employer. The mission was to enable the team to easily
+              share credential in a safe way without having to rely on external
+              tools. It proved to be a very enjoyable and useful project to work
+              on, and still use it as my password manager to this day.
             </ProjectDescription>
             <ProjectLinks>
               <BtnLink
@@ -189,7 +195,13 @@ export default function Work(props) {
                 rel="noopener noreferrer"
                 github
               ></BtnLink>
-              <BtnLink primary></BtnLink>
+              <BtnLink
+                primary
+                href="https://github.com/marcoazzurrini"
+                target="_blank"
+                aria-label="password manager external link"
+                rel="noopener noreferrer"
+              ></BtnLink>
             </ProjectLinks>
           </ProjectCol>
         </ProjectItem>
@@ -202,15 +214,16 @@ export default function Work(props) {
           />
           <ProjectCol>
             <HeadingTertiary>
-              Personal <span>Portfolio</span>
+              Mighty <span>Writer</span>
             </HeadingTertiary>
-            <ProjectStack>REACT - EMOTIONJS - GATSBY</ProjectStack>
+            <ProjectStack>REACT - REDUX - FIREBASE</ProjectStack>
             <ProjectDescription>
-              This very website you're now watching. I wanted something fast and
-              with good SEO for my portfolio, so vanilla JS with SCSS seemed
-              like the best fit. The visual effect on the top right of the
-              header is achieved via a light library called animate.js,
-              dynamically modifying a SVG file.
+              A chrome extension boasting text formatting capabilities and a tag
+              system, built with React, Redux and Firebase to manage the
+              backend. I had been looking for a minimalistic note taking app
+              that would allow me to easily format my text and organize my
+              notes, eventually I decided to built my own and I don't regret it
+              at all. :)
             </ProjectDescription>
             <ProjectLinks>
               <BtnLink
@@ -220,7 +233,13 @@ export default function Work(props) {
                 aria-label="github project"
                 github
               ></BtnLink>
-              <BtnLink primary></BtnLink>
+              <BtnLink
+                href="https://github.com/marcoazzurrini"
+                target="_blank"
+                aria-label="text formatter external link"
+                rel="noopener noreferrer"
+                primary
+              ></BtnLink>
             </ProjectLinks>
           </ProjectCol>
         </ProjectItem>
