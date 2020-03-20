@@ -35,8 +35,8 @@ export default function about() {
       <AboutText>
         Looking back, those were very formative years, I learned many life
         lessons, including the value of hard work and dedication. Working
-        blue-collar jobs allowed me to realyl form my personality and give me
-        the determination to later succeed as a developer.
+        blue-collar jobs allowed me to build my character and give me the
+        determination to later succeed as a developer.
       </AboutText>
       <AboutText>
         However after a few years I felt like I could do more.
@@ -67,9 +67,9 @@ export default function about() {
         coding and problem solving.
       </AboutText>
       <AboutText>
-        I can condfidently say it's one of the best things that has ever
-        happened to me. It has taught me to think critically and gave me
-        incredible opportunities.
+        I can confidently say that programming is one of the best things that
+        has ever happened to me. It has taught me to think critically and gave
+        me incredible opportunities.
       </AboutText>
     </About>
   )
