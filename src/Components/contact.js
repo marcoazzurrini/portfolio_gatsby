@@ -41,7 +41,7 @@ const SocialLinks = styled.a`
 
 export default function contact() {
   return (
-    <Contact id="section">
+    <Contact id="contact">
       <HeadingSecondary>
         Let's <span>talk</span>
       </HeadingSecondary>
