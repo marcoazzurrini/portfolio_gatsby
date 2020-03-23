@@ -8,7 +8,7 @@ export default function helmet(props) {
       <title>Marco Azzurrini | Frontend Web Developer</title>
       <meta
         name="description"
-        content="Hi, I'm Marco, a passionate frontend web developer, specializing in JavaScript, React and Redux."
+        content="Marco Azzurini, Frontend web developer specializing in React.js. With an emphansis on testing, performance and elegant design patterns Marco has built several web applications."
       />
       <meta charset="utf-8" />
       <meta name="author" content="Marco Azzurrini" />
